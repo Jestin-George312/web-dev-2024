@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q6</title>
+</head>
+<body>
+    <div class="container">
+        <h1>The World of Fruits</h1> <br>
+        <div class="second">
+             <h2>Fruit Survey</h2>
+             <form action="">
+                <div class="input-class">
+                    <label for=""> Name</label>
+                    <input type="text">
+                </div>
+                <div class="input-class">
+                    <label for=""> Address</label>
+                    <input type="text">
+                </div>
+                <div class="input-class">
+                    <label for=""> email</label>
+                    <input type="email">
+                </div>
+                <br><br>
+                <div class="radio-class">
+                    <p>How many pieces of fruit do you eat per day? </p>
+                    <div class="radio-options"><br>
+                        <input type="radio"  name="no_fruits" value="0">
+                        <label for="0">0</label><br>
+                        <input type="radio"  name="no_fruits" value="1">
+                        <label for="1">1</label><br>
+                        <input type="radio"  name="no_fruits" value="2">
+                        <label for="2">2</label><br>
+                        <input type="radio"  name="no_fruits" value="2+">
+                        <label for="2+">more than 2</label><br>
+                    </div>
+                </div> <br><br>
+                <div class="textarea">
+                    <label for="fruit">My Favorite Fruit:</label>
+                    <select id="fruit" name="favorite_fruit" size="4">
+                        <option value="" disabled selected>Select</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Banana">Banana</option>
+                        <option value="Plum">Plum</option>
+                        <option value="Pomegranate">Pomegranate</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <p>would you like a brochure</p>
+                    <input type="checkbox">
+                </div>
+                <button type="submit">submit</button>
+             </form>
+        </div>
+    </div>
+</body>
+<style>
+    
+    .container{
+      border: 2px solid black;
+      height: 800px;
+      width:700px;
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      background-color:#FEDC56;
+    }
+    .container h1{
+        margin:0;
+        height: 55px;;
+        display: flex;
+        justify-content: center;
+       
+        width:100%;
+        background-color:#FFBF00;
+    }
+    .second{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .input-class{
+        margin-top: 2px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .radio-class{
+        display: flex;
+        justify-content:space-between;
+    }
+    .textarea{
+        display:flex;
+        justify-content: space-between;
+    }
+    .textarea textarea{
+       
+        height:50px;
+        margin-right:-60px;
+    }
+    .checkbox{
+        display:flex;
+        justify-content: space-between;
+        margin-right: 90px;
+    }
+    button{
+        margin-top: 50px;
+        margin-left: 160px;
+        width: 125px;
+    }
+</style>
+</html>

@@ -1,0 +1,19 @@
+<html>
+ <head></head>
+ <body>
+    <p>
+	 This is a  paragraph
+	</p>
+	<button onclick="ChangeColor()">click here</button>
+ </body>
+ <script>
+     function ChangeColor(){
+	    let ci= document.querySelector('p').style.color;
+		 if(ci=="red"){
+	     document.querySelector('p').style.color= "black";
+		 }else{
+		  document.querySelector('p').style.color= "red";
+		 }
+	 }
+ </script>
+</html>

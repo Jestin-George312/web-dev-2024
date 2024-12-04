@@ -1,0 +1,33 @@
+<html>
+ <head>
+    <style>
+	 h1{
+	  color:green;
+	  text-decoration:underline;
+	 }
+	</style>
+ </head>
+<body>
+  <h1>CHECK IF POSITIVE OR NEGATIVE</h1> <br>
+   <label>Enter any number:</label>
+   <input id="data"></input>
+   <button onclick="NumberSign()">check</button>
+   <br>
+   <p id="p1"> </p>
+</body>
+<script>
+        function NumberSign(){
+		 let n = document.getElementById("data").value;
+		 if (n>0){
+		    document.getElementById("p1").innerHTML = "The number is positive";
+		 }else if(n<0){
+		   document.getElementById("p1").innerHTML = "The number is negative";
+		 }else{
+		 document.getElementById("p1").innerHTML = "The number is 0";
+		 }
+		 
+		}
+		
+</script>
+
+</html>
